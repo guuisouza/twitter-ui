@@ -1,20 +1,62 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Tweet } from './components/Tweet'
+import { House, Hash, Bell, EnvelopeSimple, BookmarkSimple, FileText, User, DotsThreeCircle } from 'phosphor-react'
+
 import './global.css'
+
+import twitterLogo from './assets/logo-twitter.svg'
 // renderizar => mostrar em tela
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <div>
-      {/* <Tweet user="Diego" content="Meu primeiro Tweet"/>
-      <Tweet user="Carla" content="Hello World"/> */}
-      <Tweet user="Guilherme" likes={15}> 
-        TestandoOOOOOoo
-      </Tweet>
-      <Tweet user="Diego2" likes={10}>
-        Conteúdo 4
-      </Tweet>
+    <div className="layout">
+      <aside className="sidebar">
+        <img className="logo" src={twitterLogo} alt="logo" />
+
+        <nav className="main-navigation">
+          <a className="active" href="">
+            <House weight="fill" />
+            Home
+          </a>
+          <a href="">
+            <Hash />
+            Explore
+          </a>
+          <a href="">
+            <Bell />
+            Notifications
+          </a>
+          <a href="">
+            <EnvelopeSimple />
+            Messages
+          </a>
+          <a href="">
+            <BookmarkSimple />
+            Bookmarks
+          </a>
+          <a href="">
+            <FileText />
+            Lists
+          </a>
+          <a href="">
+            <User/>
+            Profile
+          </a>
+          <a href="">
+            <DotsThreeCircle/>
+            More
+          </a>
+        </nav>
+
+        <button className="new-tweet" type="button">
+          Tweet
+          </button>
+      </aside>
+      <div className="content">
+        content
+      </div>
+
+      
     </div>
   </React.StrictMode>,
 )
