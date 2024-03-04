@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { House, Hash, Bell, EnvelopeSimple, BookmarkSimple, FileText, User, DotsThreeCircle } from 'phosphor-react'
+import { House, Hash, Bell, EnvelopeSimple, BookmarkSimple, FileText, User, DotsThreeCircle, Sparkle } from 'phosphor-react'
 
 import './global.css'
 
@@ -53,10 +53,21 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           </button>
       </aside>
       <div className="content">
-        content
+        <main className="timeline">
+          <div className="timeline-header">
+            Home
+            <Sparkle />
+          </div>
+          <form className="new-tweet-form">
+            <label htmlFor="tweet">
+              <img src="https://github.com/guuisouza.png" alt="Guilherme Dilio"/>
+              <textarea id="tweet" placeholder="What's happening?"/>
+            </label>
+            <button type="submit">Tweet</button>
+          </form>
+          <div className="separator"></div>
+        </main>
       </div>
-
-      
     </div>
   </React.StrictMode>,
 )
