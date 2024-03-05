@@ -5,6 +5,7 @@ import { House, Hash, Bell, EnvelopeSimple, BookmarkSimple, FileText, User, Dots
 import './global.css'
 
 import twitterLogo from './assets/logo-twitter.svg'
+import { Tweet } from './components/Tweet'
 // renderizar => mostrar em tela
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -65,7 +66,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             </label>
             <button type="submit">Tweet</button>
           </form>
+
           <div className="separator"></div>
+
+          <Tweet />
+          <Tweet />
+          <Tweet />
+          <Tweet />
         </main>
       </div>
     </div>
