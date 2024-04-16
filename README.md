@@ -1,4 +1,13 @@
-# React + TypeScript + Vite
+# UI-Twitter - Masterclass React 
+
+## Sobre o projeto
+
+Este projeto consiste no desenvolvimento de um mini-clone do X (antigo Twitter) através de uma vídeo aula de React com TypeScript da Rocketseat.  
+Desenvolvendo este projeto consegui aprender muito sobre conceitos básicos do react, como componentização, reutilização de código, estilos, gerenciamento de estados e noções sobre design com o Figma, além de ser a primeira e única vez que trabalhei com TypeScript.
+
+# Execução
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
